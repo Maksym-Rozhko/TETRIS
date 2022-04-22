@@ -12,7 +12,7 @@
     background-position: center;
 }
 
-/* .preload {
+.preload {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -35,13 +35,24 @@
 
 .preload.hide-img {
     animation: 4s infinite hide-img;
-} */
+}
 
 .title {
     text-align: center;
     margin-bottom: 30px;
     font-weight: normal;
     color: greenyellow;
+}
+
+.preload__title {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 30%);
+    color: #f38dfb;
+    font-size: 74px;
+    line-height: 80px;
+    text-shadow: 0px 0px 0 #d089d5, 1px 1px 0 #c481cd, 2px 2px 0 #c478c2, 3px 3px 0 #a76fbb, 4px 4px 0 #a567b3, 5px 5px 0 #aa5ea4, 6px 6px 0 #a1559d, 7px 7px 0 #974c98, 8px 8px 0 #904481, 9px 9px 0 #703b87, 10px 10px 0 #75327e, 11px 11px 0 #5e2a76, 12px 12px 0 #5f216d, 13px 13px 0 #4d1864, 14px 14px 0 #420f5b, 15px 15px 0 #320753, 16px 16px 0 #2b024a, 17px 17px 0 #310841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
 }
 
 .title--bold {
