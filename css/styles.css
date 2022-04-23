@@ -62,17 +62,42 @@
 .container {
     width: 500px;
     margin: 0 auto;
+    display: grid;
+    gap: 50px;
+    align-items: flex-start;
+    grid-template-areas: 
+    'score game'
+    'next game';
 }
 
 .game-area {
     border-right: 12px solid #000;
     border-left: 12px solid #000;
     border-bottom: 12px solid #000;
-    display: block;
+    display: grid;
+    grid-area: game;
     margin: 0 auto;
     z-index: 1;
     position: relative;
-    background-color: rgba(255, 255, 255, .5)
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.score,
+.next {
+    font-size: 18px;
+    border: 4px solid black;
+    grid-area: score;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.next {
+    grid-area: next;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes hide-img {
